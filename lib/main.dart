@@ -3,16 +3,21 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color(0xFF8AA6A3),
         appBar: AppBar(
           title: const Text("I'm Rich"),
-          backgroundColor: Colors.blueGrey[900],
+          backgroundColor: Color(0xFF4C5958),
         ),
-        body: const Center(
-          child: Image(
-              image: AssetImage('images/dimond.png')
-          ),
-        )
-    ),
+        body: FlatButton(
+          onPressed: () {
+            print('just want');
+          },
+            child: Image(
+                image: AssetImage('images/dimond.png'), width: 250.0, height: 250.0
+            ),
+          )
+      ),
   ));
 }
+
+
